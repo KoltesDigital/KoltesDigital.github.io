@@ -1,0 +1,1 @@
+!function(){"use strict";var e=!1,t=document.getElementById("menu-button"),n=document.querySelectorAll(".menu");t.addEventListener("click",function(t){t.preventDefault(),e=!e;for(var l=0;l<n.length;++l)n[l].style.display=e?"block":"none"})}();
