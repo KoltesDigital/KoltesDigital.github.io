@@ -15,5 +15,5 @@ block main
 						if typeof project.description === 'string'
 							p= project.description
 						else if Array.isArray(project.description)
-							each description in project.description
-								p= description
+							each desc in project.description
+								p= desc

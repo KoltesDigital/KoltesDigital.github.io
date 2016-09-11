@@ -99,6 +99,7 @@ var collections = {};
 
 Object.keys(config.collections).forEach(function(collectionName) {
 	var collection = config.collections[collectionName];
+
 	var collectionProjects = [];
 	collection.projects.forEach(function(projectName) {
 		var project = projects[projectName];
@@ -141,7 +142,7 @@ Object.keys(collections).forEach(function(collectionName) {
 
 	writeFile(path.join('generated', 'collections', collectionName, 'index.html'), html);
 
-	if (config.defaultCollection === collectionName)
+	if (config.default.collection === collectionName)
 		writeFile(path.join('generated', 'index.html'), html);
 });
 

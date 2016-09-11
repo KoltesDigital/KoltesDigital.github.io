@@ -2,18 +2,21 @@ doctype html
 html
 	head
 		meta(charset='UTF-8')
-		title Jonathan Giroux
+		title= title + ' — Jonathan Giroux'
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(name='author', content='Jonathan Giroux')
-		meta(name='description', content=description)
-		meta(property='og:description', content=description)
-		meta(property='og:image', content=config.fqdn + (thumbnail ? url + thumbnail : config.image))
+		meta(name='description', content=(description ? description + ' ' : '') + config.default.description)
+		meta(property='og:description', content=(description ? description + ' ' : '') + config.default.description)
+		meta(property='og:image', content=config.fqdn + (thumbnail ? url + thumbnail : config.default.image))
 		meta(property='og:site_name', content='Jonathan Giroux')
-		meta(property='og:title', content=title)
+		meta(property='og:title', content=title + ' — Jonathan Giroux')
 		meta(property='og:type', content='website')
 		meta(property='og:url', content=config.fqdn + url)
 		meta(name='twitter:card', content='summary')
-		meta(name='twitter:creator', content='@KoltesDigital')
+		meta(name='twitter:description', content=(description ? description + ' ' : '') + config.default.description)
+		meta(name='twitter:image', content=config.fqdn + (thumbnail ? url + thumbnail : config.default.image))
+		meta(name='twitter:site', content='@KoltesDigital')
+		meta(name='twitter:title', content=title + ' — Jonathan Giroux')
 		link(href='/favicon-120.png', rel='apple-touch-icon', sizes='120x120')
 		link(href='/favicon-152.png', rel='apple-touch-icon', sizes='152x152')
 		link(href='/favicon-128.png', rel='icon', type='image/png', sizes='128x128')
