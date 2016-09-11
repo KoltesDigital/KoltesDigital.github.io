@@ -40,4 +40,5 @@ development:
         - just-dance-now
         - carlos-pardo
         - james-bang
-  fqdn: http://koltes.digital$
+  fqdn: http://koltes.digital
+  image: /pages/about/jonathan-giroux.jpg
