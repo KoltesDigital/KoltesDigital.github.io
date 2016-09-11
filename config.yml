@@ -1,0 +1,43 @@
+development:
+  defaultCollection: games
+  collections:
+    games:
+      title: Games
+      projects:
+        - orb
+        - lifetime
+        - touch-me-together
+        - feed-the-pigeons-instead
+        - fesses
+        - big-boom-bada-boom
+        - catfight-royale
+        - how-we-make-demos
+        - bunt
+        - flying-stock-exchange
+        - alterpong
+        - 5k-run-simulator
+    media-art:
+      title: Media art
+      projects:
+        - webfunge
+        - shader-evolution
+        - black-and-white
+        - fuckjs
+        - narkissos-2.0
+    software:
+      title: Software
+      projects:
+        - architect.cpp
+        - blender-html5-animations
+        - blender-addon-registry
+        - vinewall
+        - rollstreams
+    commissions:
+      title: Commissions
+      projects:
+        - recreation
+        - just-dance-2016
+        - just-dance-now
+        - carlos-pardo
+        - james-bang
+  fqdn: http://koltes.digital$

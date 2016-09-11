@@ -1,0 +1,46 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Jonathan Giroux
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='author', content='Jonathan Giroux')
+		meta(name='description', content=description)
+		meta(property='og:description', content=description)
+		meta(property='og:image', content=config.fqdn + (thumbnail ? url + thumbnail : config.image))
+		meta(property='og:site_name', content='Jonathan Giroux')
+		meta(property='og:title', content=title)
+		meta(property='og:type', content='website')
+		meta(property='og:url', content=config.fqdn + url)
+		meta(name='twitter:card', content='summary')
+		meta(name='twitter:creator', content='@KoltesDigital')
+		link(href='/favicon-120.png', rel='apple-touch-icon', sizes='120x120')
+		link(href='/favicon-152.png', rel='apple-touch-icon', sizes='152x152')
+		link(href='/favicon-128.png', rel='icon', type='image/png', sizes='128x128')
+		link(href='/favicon-16.png', rel='icon', type='image/png', sizes='16x16')
+		link(href='/favicon-32.png', rel='icon', type='image/png', sizes='32x32')
+		link(href='https://fonts.googleapis.com/css?family=Roboto+Slab', rel='stylesheet')
+		link(href='/css/icons.css', rel='stylesheet')
+		link(href='/index.css', rel='stylesheet')
+	body
+		section.page
+			header
+				div
+					h1.name Jonathan Giroux
+					.status.menu Digital Media Artist, Software Engineer
+				div.menu
+					nav.collections
+						ul
+							each _collectionName in Object.keys(_collections)
+								- _collection = _collections[_collectionName]
+								li: a(href=_collection.url, class=_collection.name===currentCollection?'active':false)= _collection.title
+					nav.links
+						ul
+							li: a(href='/pages/about/') About
+							li.inline: a(href='https://github.com/KoltesDigital', target='_blank', title='GitHub'): span.icon-github
+							li.inline: a(href='https://twitter.com/KoltesDigital', target='_blank', title='Twitter'): span.icon-twitter
+							li.inline: a(href='https://www.youtube.com/channel/UCzP4NwnAUKrx-RDJxg3H1bw', target='_blank', title='Youtube'): span.icon-youtube-play
+							li.inline: a(href='https://fr.linkedin.com/in/giroux-jo', target='_blank', title='LinkedIn'): span.icon-linkedin
+				a#menu-button(href='#'): span(class='icon-menu')
+			block main
+			script(src='/index.js')

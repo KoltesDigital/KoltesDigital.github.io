@@ -1,0 +1,19 @@
+extends layout
+
+block main
+	main.collection
+		each project in projects
+			if project
+				a.overview(href=project.url): article
+					img.image(src=project.url + project.thumbnail)
+					.text
+						h1= project.title
+						if project.date
+							.annotation= project.date.getFullYear()
+						if project.wip
+							.annotation WIP
+						if typeof project.description === 'string'
+							p= project.description
+						else if Array.isArray(project.description)
+							each description in project.description
+								p= description

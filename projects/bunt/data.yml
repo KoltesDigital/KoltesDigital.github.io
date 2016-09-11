@@ -1,0 +1,16 @@
+title: Bunt
+date: 2012-01-25
+description: Solve multicolored puzzles with only five buttons!
+thumbnail: bunt-thumbnail.jpg
+long: This funny puzzle game only requires *five keys*, which activate objects according to their *colors*. Each object has its *unique behavior*, leading to a varied and challenging gameplay. The goal is to *catch all the stars*!
+facts:
+  - Released on *January 25, 2012* for the *[Experimental Gameplay Project](http://experimentalgameplay.com/blog/2011/12/5-buttons-competition-in-decemberjanuary/)*.
+  - Made in less than *a week*.
+slider:
+  - <img src='bunt1.png'/>
+  - <img src='bunt2.png'/>
+  - <img src='bunt3.png'/>
+links:
+  - ["downloads/bunt_windows.zip", "Download for *Windows*"]
+  - ["downloads/bunt_macosx.zip", "Download for *Mac OS X*"]
+  - ["downloads/bunt_love.zip", "Download for *other platforms*"]

@@ -1,0 +1,6 @@
+{
+	"browser": true,
+	"eqeqeq": true,
+	"undef": true,
+	"unused": true
+}

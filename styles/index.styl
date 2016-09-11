@@ -1,0 +1,160 @@
+font-color = #423f3c
+link-color = #b87534
+
+.aspect-ratio
+	position: relative
+	&:before
+		display: block
+		content: ""
+		width: 100%
+	> *
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+.aspect-ratio-sixteen-nine:before
+	padding-top: (9 / 16) * 100%
+
+.fullwidth
+	width: 100%
+
+.center
+.halfwidth
+	display: block
+	margin: auto
+	max-width: 100%
+
+.halfwidth
+	width: 400px
+
+body
+	color: font-color
+	font-family: 'Roboto Slab', serif
+	font-size: 16px
+	margin: 0
+
+a
+	color: link-color
+	text-decoration: none
+	&:hover
+	&.active
+		color: link-color
+
+.page
+	margin: 20px auto 100px auto
+	max-width: 810px
+
+header
+	margin-bottom: 40px
+
+	> div > *
+		display: inline-block
+		margin: 0
+	.name
+		font-size: 2em
+		margin-left: 5px
+		margin-right: 15px
+	.status
+		font-size: 1.6em
+		margin-left: 5px
+	.collections
+		font-size: 1.2em
+	nav
+		margin-right: 40px
+
+		a
+			color: font-color
+			display: inline-block
+			padding: 10px 5px
+			transition: transform 300ms
+			&:hover
+				transform: translateY(3px)
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+	li.inline
+		display: inline-block
+
+main
+	margin: 0 5px
+
+	h1
+		font-size: 1.4em
+
+	h2
+		font-size: 1.2em
+
+	a
+		display: inline-block
+		transition: transform 300ms
+		&:hover
+			transform: translateY(-2px)
+
+.overview
+	color: font-color
+	display: block
+	transition: transform 300ms
+
+	&:hover
+		transform: translateX(10px)
+
+	article
+		margin-bottom: 40px
+		> *
+			display: inline-block
+			vertical-align: top
+
+	.image
+		margin-right: 20px
+
+	.text
+		width 400px
+
+	h1
+		display: inline-block
+		margin-bottom: 0
+
+	.annotation
+		display: inline-block
+		font-size: 0.8em
+		margin-left: 10px
+
+#menu-button
+	color: font-color
+	display: none
+	font-size: 1.4em
+	padding: 10px
+	position: absolute
+	top: 10px
+	right: 10px
+
+@media screen and (max-width: 999px)
+	#menu-button
+		display: block
+
+	.page
+		max-width: 360px
+
+	header
+		margin: 0 10px 40px 10px
+
+		.menu
+			display: none
+		> div > *
+			display: block
+		li
+			display: block
+
+	.overview
+		article > *
+			display: block
+		.image
+			margin: auto
+		.text
+			margin: auto
+			width: initial
