@@ -1,4 +1,4 @@
-![Video](https://www.youtube.com/embed/uqqIu1fwyUQ "iframe,16:9")
+![Video](https://www.youtube.com/embed/YzpnV4REJ8M "iframe,16:9")
 
 Narkissos 2.0 reflects on the dilemma between self-expression and anonymity on Internet. On one hand, Internet is a world of freedom (at least it should be so) and users could express themselves on many channels. On the other hand, they often hide themselves behind nicknames and avatars.
 
@@ -7,6 +7,8 @@ Released on *July 17, 2012* at the [Sommerloch 2012, Hochschule für Gestaltung 
 Wall and mirror frame by Hannes Gerlach and Greta Luise Hoffmann.
 
 Pony heads by [Esipode](http://esipode.deviantart.com/).
+
+[Repository on *GitHub*](https://github.com/KoltesDigital/Narkissos-2.0)
 
 ![Screenshot](https://github.com/KoltesDigital/Narkissos-2.0/raw/master/screenshots/Sun_Jul_22_14_06_14_2012.jpg "halfwidth")
 
