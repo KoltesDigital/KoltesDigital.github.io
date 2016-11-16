@@ -7,6 +7,7 @@ development:
         - orb
         - lifetime
         - touch-me-together
+        - final-countdown
         - feed-the-pigeons-instead
         - fesses
         - big-boom-bada-boom
