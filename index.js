@@ -33,7 +33,7 @@ renderer.image = function(href, title, text) {
 
 	var out;
 	if (tags.iframe) {
-		out = '<iframe' + classAttribute + ' src="' + href + '" frameBorder="0"></iframe>';
+		out = '<iframe' + classAttribute + ' src="' + href + '" frameBorder="0" allowfullscreen></iframe>';
 	} else {
 		out = '<img' + classAttribute + ' src="' + href + '" alt="' + text + '"/>';
 	}
