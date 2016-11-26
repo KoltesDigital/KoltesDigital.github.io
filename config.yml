@@ -4,7 +4,7 @@ development:
       title: Games
       description: Featured game projects.
       projects:
-        - orb
+        - living-orb
         - lifetime
         - touch-me-together
         - final-countdown
