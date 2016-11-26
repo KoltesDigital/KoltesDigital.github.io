@@ -1,5 +1,6 @@
 title: Blender HTML5 Animations
 date: 2016-07-24
-wip: true
+annotations:
+  - WIP
 description: Export animation curves from Blender and use them for the web.
 thumbnail: blender-html5-animations.jpg

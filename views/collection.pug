@@ -10,8 +10,9 @@ block main
 						h1= project.title
 						if project.date
 							.annotation= project.date.getFullYear()
-						if project.wip
-							.annotation WIP
+						if project.annotations
+							each annotation in project.annotations
+								.annotation= annotation
 						if typeof project.description === 'string'
 							p= project.description
 						else if Array.isArray(project.description)

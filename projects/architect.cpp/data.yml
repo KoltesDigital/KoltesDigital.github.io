@@ -1,5 +1,6 @@
 title: architect.cpp
 date: 2016-01-06
-wip: true
+annotations:
+  - WIP
 description: Tools for checking and visualizing C++ code architecture.
 thumbnail: architect-cpp-thumbnail.png

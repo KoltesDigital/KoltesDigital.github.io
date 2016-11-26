@@ -1,5 +1,6 @@
 title: Living Orb
 date: 2016-05-21
-wip: true
+annotations:
+  - WIP
 description: Tangible game console, controlled through its rotation, and producing light patterns in return.
 thumbnail: living-orb-thumbnail.jpg
