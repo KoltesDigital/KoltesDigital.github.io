@@ -2,6 +2,8 @@
 
 *Ubisoft* is a multinational video game developer and publisher. *Just Dance* is their popular dance game series.
 
+[Game page on *ubisoft.com*](https://www.ubisoft.com/en-US/game/just-dance-2016)
+
 Server-side development for the online features of Just Dance 2016.
 
 * Creation of the new app architecture with Node.js
@@ -17,5 +19,3 @@ Tool development
 * Visualisations on Kibana
 
 Released on *October 22, 2015*.
-
-https://www.ubisoft.com/en-US/game/just-dance-2016

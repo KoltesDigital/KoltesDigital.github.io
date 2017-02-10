@@ -2,4 +2,4 @@
 
 This is a POC for a modern addon manager for Blender. Users can search for addons through a registry and install them directly. If a new version of any addon is released, they can update it.
 
-[Repository on *GitHub*](https://github.com/KoltesDigital/blender-addon-registry)
+[Repository on *GitHub*](https://github.com/KoltesDigital/blender-addon-registry "button")

@@ -2,7 +2,7 @@
 
 "You slam ass, you pay the price."
 
-[Download for *Windows*](https://github.com/KoltesDigital/Fesses/releases/download/v1/Fesses-Windows.7z)
+[Download for *Windows*](https://github.com/KoltesDigital/Fesses/releases/download/v1/Fesses-Windows.7z "button")
 
 Released on *November 7, 2015* at the [ZooMachines 2015](http://zoomachines.com/index.php/93-edition-2015).
 

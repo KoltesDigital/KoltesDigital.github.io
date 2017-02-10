@@ -2,8 +2,8 @@
 
 LD's theme was *Entire Game on One Screen* and this multiplayer game totally fits in: only one player can see the screen, which quickly alternates.
 
-Released on *December 7, 2014* for the [Ludum Dare &#35;31](http://ludumdare.com/compo/).
+[Repository on *GitHub*](https://github.com/KoltesDigital/Alterpong "button")
 
-[Repository on *GitHub*](https://github.com/KoltesDigital/Alterpong)
+Released on *December 7, 2014* for the [Ludum Dare &#35;31](http://ludumdare.com/compo/).
 
 ![Gameplay](https://github.com/KoltesDigital/Alterpong/raw/master/src/alterpong.gif "center")

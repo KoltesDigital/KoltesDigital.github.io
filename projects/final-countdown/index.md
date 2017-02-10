@@ -2,9 +2,9 @@
 
 A countdown timer. A button which resets the timer to 5 minutes. Make it last.
 
-Released on *November 12, 2016* at the [Zoo Machines 2016](http://zoomachines.com/index.php/100-zoo-machines-2016-save-the-date).
+[Repository on *GitHub*](https://github.com/KoltesDigital/Final-Countdown "button")
 
-[GitHub repository](https://github.com/KoltesDigital/Final-Countdown)
+Released on *November 12, 2016* at the [Zoo Machines 2016](http://zoomachines.com/index.php/100-zoo-machines-2016-save-the-date).
 
 ## Credits
 

@@ -2,6 +2,6 @@
 
 James Bang is an advergame and gamification studio.
 
-I was asked to give an animated look and feel to their presentation page. The background is WebGL and the foregroud visuals are regular images. The whole is smoothly animated. Works on mobile too.
+[*james-bang.com*](http://www.james-bang.com/ "button")
 
-http://www.james-bang.com/
+I was asked to give an animated look and feel to their presentation page. The background is WebGL and the foregroud visuals are regular images. The whole is smoothly animated. Works on mobile too.

@@ -2,7 +2,7 @@
 
 The king declares that he likes women with a certain item, for instance sunglasses. The courtesans then search for this item, hidden somewhere in the banquet hall. Once a courtesan found it, she must bring it back to the throne, while the other courtesans try to steal it from her.
 
-[Download for *Windows*](https://github.com/KoltesDigital/Catfight-Royale/releases/download/v1/CatfightRoyale_windows.zip)
+[Download for *Windows*](https://github.com/KoltesDigital/Catfight-Royale/releases/download/v1/CatfightRoyale_windows.zip "button")
 
 Released on *May 4, 2014* at the [La Grande Confiture de Jeux 2014](http://www.grandeconfiture.com/).
 

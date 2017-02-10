@@ -6,7 +6,7 @@ This project has two parts:
 1. a Blender addon which exports animation curves as CSS, JS, or JSON;
 2. a JS library which can parse the exported data and compute the curve values for any time.
 
-[Repository on *GitHub*](https://github.com/KoltesDigital/blender-html5-animations)
+[Repository on *GitHub*](https://github.com/KoltesDigital/blender-html5-animations "buto")
 
 In the FOSDEM 2016 talk below, I argue for the usage of Blender as a generic tool using this addon.
 

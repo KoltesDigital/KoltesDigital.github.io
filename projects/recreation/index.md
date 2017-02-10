@@ -12,7 +12,7 @@ Exhibited at *Forum des Halles (Paris, France)*.
 
 Fifteen colored buttons are disposed in front of a screen. The screen displays a color and a number. Players are then asked to press as many buttons of this color.
 
-http://www.alineaire.fr/recreation/
+[Game page on *alineaire.fr*](http://www.alineaire.fr/recreation/ "button")
 
 ## Petite récréation
 
@@ -20,4 +20,4 @@ http://www.alineaire.fr/recreation/
 
 Four buttons are disposed in front on a screen. Each button makes the corresponding character jump in the game. Players must avoid collisions with obstacles appearing in the screen.
 
-http://www.alineaire.fr/petite-recreation/
+[Game page on *alineaire.fr*](http://www.alineaire.fr/petite-recreation/ "button")

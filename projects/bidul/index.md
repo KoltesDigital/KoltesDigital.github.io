@@ -6,6 +6,6 @@
 
 > The controller has two joysticks on its sides, each one controlling one leg of the robot. The top joystick control the jetpack. All movements are physic based, reacting accurately to player input.
 
-[More on itch.io](https://glkitty.itch.io/bidul)
+[Game page on *itch.io*](https://glkitty.itch.io/bidul "button")
 
 Contribution: electronics, Arduino, communication with Unity.

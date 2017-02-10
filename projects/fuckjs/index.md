@@ -2,7 +2,7 @@
 
 12KB invitation intro for the demoparty DemoJS 2014.
 
-[Run online](http://tmp.graphics/releases/fuckjs/)
+[Run online](http://tmp.graphics/releases/fuckjs/ "button")
 
 Released on *August 9, 2014* at the [Evoke 2014](http://www.evoke.eu/2014/).
 

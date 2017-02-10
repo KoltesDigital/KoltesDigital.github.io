@@ -2,7 +2,7 @@
 
 I've always thought that *traders* were just *kids* playing with *paper airplanes* inside huge buildings, drawing some *meaningless lines* that rule the world. Well, it *might* be true.
 
-[Play online](http://koltesdigital.github.io/Flying-Stock-Exchange)
+[Play online](http://koltesdigital.github.io/Flying-Stock-Exchange "button")
 
 Released on *March 30, 2012* for the [Experimental Gameplay Project](http://experimentalgameplay.com/blog/2012/03/economy-in-march-2012/).
 

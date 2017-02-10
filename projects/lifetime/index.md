@@ -2,11 +2,9 @@
 
 The story of a little boy who liked going to the park with his mommy. A game about making decisions and growing up.
 
-Downloads:
-
-* [Windows](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_windows.zip)
-* [Mac OS X](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_macosx.zip)
-* [Löve](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_love.zip)
+[Download for *Windows*](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_windows.zip "button")
+[Download for *Mac OS X*](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_macosx.zip "button")
+[Download as *Löve* file](https://github.com/KoltesDigital/Lifetime/releases/download/v1/lifetime_love.zip "button")
 
 Released on *May 27, 2011* for the [Experimental Gameplay Project](http://experimentalgameplay.com/blog/2011/05/zoom-in-may).
 

@@ -50,7 +50,7 @@ renderer.link = function(href, title, text) {
 	if (href.indexOf('//') !== -1)
 		out += ' target="_blank"';
 	if (title)
-		out += ' title="' + title + '"';
+		out += ' class="' + title.split(',').join(' ') + '"';
 	out += '>' + text + '</a>';
 	return out;
 };
