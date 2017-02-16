@@ -1,4 +1,5 @@
 
+.icon-itchio:before { content: '\e800'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-mail:before { content: '\f0e0'; } /* '' */
