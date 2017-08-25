@@ -32,6 +32,7 @@ development:
       title: Software
       description: Featured software projects.
       projects:
+        - shadertoy-exporter
         - architect.cpp
         - blender-html5-animations
         - blender-addon-registry
