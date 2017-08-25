@@ -41,6 +41,7 @@ development:
       title: Commissions
       description: Featured commissioned projects.
       projects:
+        - mario-rabbids-kingdom-battle
         - bidul
         - recreation
         - light-mood
