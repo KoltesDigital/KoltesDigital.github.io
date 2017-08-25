@@ -22,6 +22,7 @@ development:
       title: Media art
       description: Featured media art project.
       projects:
+        - those-who-leave
         - webfunge
         - shader-evolution
         - black-and-white
