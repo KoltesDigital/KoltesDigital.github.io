@@ -6,6 +6,7 @@ development:
       projects:
         - living-orb
         - lifetime
+        - tea-and-time
         - touch-me-together
         - new-retro-pong
         - final-countdown
