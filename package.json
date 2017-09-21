@@ -4,7 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "watch": "nodemon -e js,md,pug,styl,yml -i generated"
   },
   "dependencies": {
     "config-path": "^2.1.0",
@@ -18,5 +19,8 @@
     "pug": "^2.0.0-beta5",
     "stylus": "^0.42.3",
     "uglify-js": "^2.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
