@@ -67,7 +67,7 @@ function loadDir(dirName) {
 		var projectPath = path.join(dirName, projectName);
 		var dataPath = path.join(projectPath, 'data.yml');
 		if (fs.existsSync(dataPath)) {
-			console.log('Loading %s/%s', dirName, projectName);
+			console.log('Loading %s/%s.', dirName, projectName);
 
 			var data = yaml.load(fs.readFileSync(dataPath).toString());
 
@@ -117,7 +117,7 @@ Object.keys(config.collections).forEach(function(collectionName) {
 
 var views = {};
 
-['collection', 'page'].forEach(function(viewName) {
+['collection', 'home', 'page'].forEach(function(viewName) {
 	views[viewName] = pug.compileFile(path.join('views', viewName + '.pug'), {
 		filename: viewName,
 	});
@@ -129,7 +129,7 @@ function writeFile(file, data) {
 }
 
 Object.keys(collections).forEach(function(collectionName) {
-	console.log('Generating collection %s', collectionName);
+	console.log('Generating collection %s.', collectionName);
 
 	var collection = collections[collectionName];
 
@@ -141,14 +141,11 @@ Object.keys(collections).forEach(function(collectionName) {
 	}));
 
 	writeFile(path.join('generated', 'collections', collectionName, 'index.html'), html);
-
-	if (config.default.collection === collectionName)
-		writeFile(path.join('generated', 'index.html'), html);
 });
 
 function outputDir(dirName, obj) {
 	Object.keys(obj).forEach(function(projectName) {
-		console.log('Generating %s/%s', dirName, projectName);
+		console.log('Generating %s/%s.', dirName, projectName);
 
 		var project = obj[projectName];
 
@@ -193,6 +190,16 @@ stylus(style)
 		writeFile(path.join('generated', 'index.css'), css);
 	});
 
+console.log('Generating index.html.');
+var html = views.home({
+	_collections: collections,
+	_projects: projects,
+	config: config,
+	url: '/',
+});
+writeFile(path.join('generated', 'index.html'), html);
+
+console.log('Generating index.js.');
 glob('!(.*)', {
 	cwd: 'scripts',
 	matchBase: true,
@@ -205,6 +212,7 @@ glob('!(.*)', {
 	writeFile(path.join('generated', 'index.js'), result.code);
 });
 
+console.log('Copying static files.');
 glob('!(.*)', {
 	cwd: 'static',
 	matchBase: true,

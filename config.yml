@@ -52,7 +52,8 @@ development:
         - carlos-pardo
         - james-bang
   fqdn: http://koltes.digital
+  home:
+    video: https://www.youtube.com/embed/87J-JETBMgM
   default:
-    collection: games
     description: Jonathan Giroux, Digital Media Artist, Software Engineer.
     image: /pages/about/jonathan-giroux.jpg
