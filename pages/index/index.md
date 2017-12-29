@@ -14,6 +14,8 @@ Taking over the late DemoJS demoparty, I organize the [Cookie demoparty](http://
 
 This led me to discover the livecoding scene, and to organize [regular performative meetings](https://www.youtube.com/playlist?list=PL9e8LAhFfY1qy4R28JQ6uXU5U18T8SkPF).
 
-I'm currently in Paris, working for Ubisoft, and occasionally giving courses.
+Sharing is important for me. Most of my personnal work is on GitHub. I occasionally give courses on topics related to games, network, and software architecture.
+
+I'm currently in Paris, working for Ubisoft.
 
 ![Me](jonathan-giroux.jpg "halfwidth")
