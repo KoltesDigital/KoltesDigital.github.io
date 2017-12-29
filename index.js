@@ -13,6 +13,14 @@ var stylus = require('stylus');
 var UglifyJS = require('uglify-js');
 var yaml = require('js-yaml');
 
+var views = {};
+
+['collection', 'home', 'page'].forEach(function (viewName) {
+	views[viewName] = pug.compileFile(path.join('views', viewName + '.pug'), {
+		filename: viewName,
+	});
+});
+
 var renderer = new marked.Renderer();
 
 renderer.image = function(href, title, text) {
@@ -69,6 +77,10 @@ function loadDir(dirName) {
 		if (fs.existsSync(dataPath)) {
 			console.log('Loading %s/%s.', dirName, projectName);
 
+			var isHome = (dirName === 'pages' && projectName === 'index');
+			var parentDir = (isHome ? 'generated' : path.join('generated', dirName, projectName));
+			var view = (isHome ? views.home : views.page);
+
 			var data = yaml.load(fs.readFileSync(dataPath).toString());
 
 			var pages = {};
@@ -85,7 +97,9 @@ function loadDir(dirName) {
 				name: projectName,
 				pages: pages,
 				path: projectPath,
-				url: '/' + dirName + '/' + projectName + '/',
+				url: isHome ? '/' : '/' + dirName + '/' + projectName + '/',
+				parentDir: parentDir,
+				view: view,
 			});
 		}
 	});
@@ -112,14 +126,6 @@ Object.keys(config.collections).forEach(function(collectionName) {
 		name: collectionName,
 		projects: collectionProjects,
 		url: '/collections/' + collectionName + '/',
-	});
-});
-
-var views = {};
-
-['collection', 'home', 'page'].forEach(function(viewName) {
-	views[viewName] = pug.compileFile(path.join('views', viewName + '.pug'), {
-		filename: viewName,
 	});
 });
 
@@ -150,7 +156,7 @@ function outputDir(dirName, obj) {
 		var project = obj[projectName];
 
 		Object.keys(project.pages).forEach(function(pageName) {
-			var html = views.page(merge(project, {
+			var html = project.view(merge(project, {
 				body: project.pages[pageName],
 				currentCollection: project.collectionName,
 				_collections: collections,
@@ -158,20 +164,20 @@ function outputDir(dirName, obj) {
 				config: config,
 			}));
 
-			writeFile(path.join('generated', dirName, projectName, pageName + '.html'), html);
+			writeFile(path.join(project.parentDir, pageName + '.html'), html);
 		});
-	});
 
-	glob('!(*.md|*.yml|.*)', {
-		cwd: dirName,
-		matchBase: true,
-		nodir: true,
-	}, function(err, files) {
-		if (err) throw err;
-		return files.forEach(function(file) {
-			var fromName = path.join(dirName, file);
-			var toName = path.join('generated', dirName, file);
-			fs.createReadStream(fromName).pipe(fs.createWriteStream(toName));
+		glob('!(*.md|*.yml|.*)', {
+			cwd: path.join(dirName, projectName),
+			matchBase: true,
+			nodir: true,
+		}, function (err, files) {
+			if (err) throw err;
+			return files.forEach(function (file) {
+				var fromName = path.join(dirName, projectName, file);
+				var toName = path.join(project.parentDir, file);
+				fs.createReadStream(fromName).pipe(fs.createWriteStream(toName));
+			});
 		});
 	});
 }
@@ -179,6 +185,7 @@ function outputDir(dirName, obj) {
 outputDir('projects', projects);
 outputDir('pages', pages);
 
+console.log('Generating index.css.');
 var style = fs.readFileSync(path.join('styles', 'index.styl')).toString();
 stylus(style)
 	.set('filename', 'index.css')
@@ -189,15 +196,6 @@ stylus(style)
 		if (err) throw err;
 		writeFile(path.join('generated', 'index.css'), css);
 	});
-
-console.log('Generating index.html.');
-var html = views.home({
-	_collections: collections,
-	_projects: projects,
-	config: config,
-	url: '/',
-});
-writeFile(path.join('generated', 'index.html'), html);
 
 console.log('Generating index.js.');
 glob('!(.*)', {

@@ -10,6 +10,8 @@ block main
 						h1= project.title
 						if project.date
 							.annotation= project.date.getFullYear()
+						if project.dates
+							.annotation= project.dates[0].getFullYear() + '–' + project.dates[project.dates.length-1].getFullYear()
 						if project.annotations
 							each annotation in project.annotations
 								.annotation= annotation

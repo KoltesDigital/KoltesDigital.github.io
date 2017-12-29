@@ -24,6 +24,8 @@ development:
       description: Featured media art project.
       projects:
         - those-who-leave
+        - and-the-crowd-gathered-at-cookie
+        - shader-highlights
         - webfunge
         - shader-evolution
         - black-and-white
@@ -51,9 +53,13 @@ development:
         - just-dance-now
         - carlos-pardo
         - james-bang
+    events:
+      title: Events
+      description: Featured organized events.
+      projects:
+        - cookie
+        - shader-showdown-paris
+        - weekly-hour-game-jams
   fqdn: http://koltes.digital
-  home:
-    video: https://www.youtube.com/embed/87J-JETBMgM
   default:
     description: Jonathan Giroux, Digital Media Artist, Software Engineer.
-    image: /pages/about/jonathan-giroux.jpg
