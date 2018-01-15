@@ -25,6 +25,7 @@ development:
       projects:
         - those-who-leave
         - and-the-crowd-gathered-at-cookie
+        - tranchette
         - shader-highlights
         - webfunge
         - shader-evolution
